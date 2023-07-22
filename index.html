@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABO1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9Pff8fS54ein2eOn2eL9/v684unr9vj7/f7c8PSl2eKHzNil2OLv+Prz+vue1eB3xdOq2uPm9Pf29/vy8/n3/Py13+eEyteZ097P6u/2+/zByeKOm8r8/f7u+Pq+4+qOz9uU0dzo9fjb4O5meLbh5fH0+vvV7fHx+fv8/P2Gk8Wbps+44eim2eLW2+xkdrXO1Oit3OWttthperja3u7u+Pn6+/2hrNJneLfFy+P7+/23v92IlcbN0ufx8/nj5/Kbp9BsfbltfrqAj8ORnsvg5PD+/v/v8ffQ1em0vduqtNfn6vS/61TcAAAAHHRSTlMAAAQqbK3Z8v0DN5ff+xqJ6jbC/kHBAjjp3qz8qSKHsgAAAAFiS0dEAf8CLd4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfiChMPAx5FOtlkAAABSUlEQVQ4y4WTZ2OCMBCGc4IMEXAPjB10771t7dLuXbv3/v+/oNigIYjN+4HcJU9CcgMhVxASxLAkK4oshUUhBIgVqBEtqmNXelSLqF4EwDBjmFHMNADoejyRxD4lE/EGAZCScICkFCGc/YHrDkHOACON2yhtOABkTNxWZgYQZHPeqWKH18tlAakas6ezi3E1FQl5Fuhm3LyARD0AsIs9vSSmIrJwC9DXPzA4NEx8C0ktwMjo2PiE3YgFkokxOdUEpmdm5+YXXEBGCjEWl5bpHVZKq2tlMq+gAjHWNza9r9jarpD5QuMX1Z3dv3Fvn72T3LzkweFRfSgd+xJGn3lyeuZ8K+csYNFAXVzWrqr+bDmBoqG+vqnd3t3bDOCE2push8en55fXNzZZTLrfPz6/vn+oX083t2C4JccvWm7Z8xuH33r85v2v/X8Bp/FiyVLnL/0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMTAtMTlUMTU6MDM6MzArMDI6MDCzEaEaAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTEwLTE5VDE1OjAzOjMwKzAyOjAwwkwZpgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Body Mass Index Calculator</title>
+    <script type="module" crossorigin src="/bmi-calculator-challenge/assets/index-0b795b0a.js"></script>
+    <link rel="stylesheet" href="/bmi-calculator-challenge/assets/index-eee13f3b.css">
+  </head>
+  <body>
+    <section class="section-hero container">
+      <div class="hero">
+        <header class="header">
+          <img src="/bmi-calculator-challenge/assets/logo-77e9ec19.svg" alt="BMI calculator logo" />
+          <h1 class="heading-1">Body Mass Index Calculator</h1>
+          <p class="fs-body-md">
+            Better understand your weight in relation to your height using our
+            body mass index (BM) calculator. While BMI is not the sole
+            determinant of a healthy weight, it offers a valuable starting point
+            to evaluate your overall health and well-being.
+          </p>
+        </header>
+        <div class="bmi-tool bg-grey-light-2">
+          <h3 class="heading-3">Enter your details below</h3>
+          <form class="bmi-form" data-mode="metric">
+            <div class="bmi-form__input input--metric">
+              <input type="radio" id="metric" value="metric" />
+              <label for="metric" class="fs-body-md fw-semi-bold text-grey-dark"
+                >Metric</label
+              >
+            </div>
+            <div class="bmi-form__input input--imperial">
+              <input type="radio" id="imperial" value="imperial" />
+              <label
+                for="imperial"
+                class="fs-body-md fw-semi-bold text-grey-dark"
+              >
+                Imperial
+              </label>
+            </div>
+            <div class="bmi-form__input group--height-cm">
+              <label for="height-cm" class="fs-body-sm text-grey-light-1"
+                >Height</label
+              >
+              <input
+                type="number"
+                name="height-cm"
+                id="height-cm"
+                placeholder="0"
+                min="0"
+              />
+            </div>
+            <div class="bmi-form__input group--weight-kg">
+              <label for="weight-kg" class="fs-body-sm text-grey-light-1"
+                >Weight</label
+              >
+              <input
+                type="number"
+                name="weight-kg"
+                id="weight-kg"
+                placeholder="0"
+                min="0"
+              />
+            </div>
+            <fieldset class="bmi-form__input group--height-ft">
+              <legend class="fs-body-sm text-grey-light-1">Height</legend>
+              <input
+                type="number"
+                name="height-ft"
+                id="height-ft"
+                placeholder="0"
+                min="0"
+              />
+              <input
+                type="number"
+                name="height-in"
+                id="height-in"
+                placeholder="0"
+                min="0"
+              />
+            </fieldset>
+            <fieldset class="bmi-form__input group--weight-lbs">
+              <legend class="fs-body-sm text-grey-light-1">Weight</legend>
+              <input
+                type="number"
+                name="weight-st"
+                id="weight-st"
+                placeholder="0"
+                min="0"
+              />
+              <input
+                type="number"
+                name="weight-lbs"
+                id="weight-lbs"
+                placeholder="0"
+                min="0"
+              />
+            </fieldset>
+            <button
+              class="bmi-result bg-primary text-grey-light-2"
+              type="submit"
+            >
+              <div>
+                <div class="fs-body-sm">Your BMI is...</div>
+                <strong class="fs-heading-xl result"> 23.4 </strong>
+              </div>
+              <p class="text-grey-light-2 fs-body-sm">
+                Your BMI suggests you're
+                <span id="category"> healthy weight </span> Your ideal weight is
+                between
+                <strong class="fw-semi-bold">
+                  <span id="lower"> 65kgs</span>
+                  &dash;
+                  <span id="upper"> 85kgs </span>
+                </strong>
+              </p>
+            </button>
+            <button
+              class="bmi-submit bg-primary text-grey-light-2"
+              type="submit"
+            >
+              <div>
+                <h4 class="text-grey-light-2 fs-heading-md">Welcome!</h4>
+              </div>
+              <p class="text-grey-light-2 fs-body-sm">
+                Enter your height and weight and you’ll see your BMI result here
+              </p>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-info grid--2-cols container info">
+      <img
+        src="/bmi-calculator-challenge/assets/pattern-curved-line-left-ab78b30d.svg"
+        alt="Decorative Vector"
+        class="line-left"
+      />
+      <figure>
+        <img
+          src="/bmi-calculator-challenge/assets/image-man-eating-3c3b4a46.webp"
+          alt="Man enjoying food"
+          class="info__img"
+        />
+      </figure>
+      <div class="info__text">
+        <h2 class="heading-2">What your BMI result means</h2>
+        <p class="fs-body-md">
+          A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
+          Maintaining a healthy weight may lower your chances of experiencing
+          health issues later on, such as obesity and type 2 diabetes. Aim for a
+          nutritious diet with reduced fat and sugar content, incorporating
+          ample fruits and vegetables. Additionally, strive for regular physical
+          activity, ideally about 30 minutes daily for five days a week.
+        </p>
+      </div>
+    </section>
+    <section class="section-tips container">
+      <div class="tips">
+        <div class="tip tip--1">
+          <img src="/bmi-calculator-challenge/assets/icon-eating-5cfeee43.svg" alt="Eating icon" />
+          <h3 class="heading-3">Healthy eating</h3>
+          <p class="fs-body-md">
+            Healthy eating promotes weight control, disease prevention, better
+            digestion, immunity, mental clarity, and mood.
+          </p>
+        </div>
+        <div class="tip tip--2">
+          <img src="/bmi-calculator-challenge/assets/icon-exercise-2bb90f33.svg" alt="Eating icon" />
+          <h3 class="heading-3">Regular exercise</h3>
+          <p class="fs-body-md">
+            Exercise improves fitness, aids weight control, elevates mood, and
+            reduces disease risk, fostering wellness and longevity.
+          </p>
+        </div>
+        <div class="tip tip--3">
+          <img src="/bmi-calculator-challenge/assets/icon-sleep-fa3886d6.svg" alt="Eating icon" />
+          <h3 class="heading-3">Adequate sleep</h3>
+          <p class="fs-body-md">
+            Sleep enhances mental clarity, emotional stability, and physical
+            wellness, promoting overall restoration and rejuvenation.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section-limitations container">
+      <div class="limitations">
+        <h2 class="heading-2">
+          Limitations of BMI
+          <img
+            src="/bmi-calculator-challenge/assets/pattern-curved-line-right-bbd61fcb.svg"
+            alt="Decorative Vector"
+            class="line-right"
+          />
+        </h2>
+        <p class="fs-body-md">
+          Although BMI is often a practical indicator of healthy weight, it is
+          not suited for every person. Specific groups should carefully consider
+          their BMI outcomes, and in certain cases, the measurement may not be
+          beneficial to use.
+        </p>
+
+        <article class="limitation limitation--1">
+          <h4 class="heading-4">
+            <img src="/bmi-calculator-challenge/assets/icon-gender-6c100a44.svg" alt="Gender icon" />
+            Gender
+          </h4>
+          <p class="fs-body-md">
+            The development and body fat composition of girls and boys vary with
+            age. Consequently, a child's age and gender are considered when
+            evaluating their BMI.
+          </p>
+        </article>
+        <article class="limitation limitation--2">
+          <h4 class="heading-4">
+            <img src="/bmi-calculator-challenge/assets/icon-age-0ccad92d.svg" alt="Age icon" />
+            Age
+          </h4>
+          <p class="fs-body-md">
+            In aging individuals, increased body fat and muscle loss may cause
+            BMI to underestimate body fat content.
+          </p>
+        </article>
+        <article class="limitation limitation--3">
+          <h4 class="heading-4">
+            <img src="/bmi-calculator-challenge/assets/icon-muscle-b3463674.svg" alt="Muscle icon" />
+            Muscle
+          </h4>
+          <p class="fs-body-md">
+            BMI may misclassify muscular individuals as overweight or obese, as
+            it doesn't differentiate muscle from fat.
+          </p>
+        </article>
+        <article class="limitation limitation--4">
+          <h4 class="heading-4">
+            <img
+              src="/bmi-calculator-challenge/assets/icon-pregnancy-37ab9ba2.svg"
+              alt="Pregnancy icon"
+            />
+            Pregnancy
+          </h4>
+          <p class="fs-body-md">
+            Expectant mothers experience weight gain due to their growing baby.
+            Maintaining a healthy pre-pregnancy BMI is advisable to minimise
+            health risks for both mother and child.
+          </p>
+        </article>
+        <article class="limitation limitation--5">
+          <h4 class="heading-4">
+            <img src="/bmi-calculator-challenge/assets/icon-race-b876d31d.svg" alt="Race icon" />
+            Race
+          </h4>
+          <p class="fs-body-md">
+            Certain health concerns may affect individuals of some Black and
+            Asian origins at lower BMIs than others. To learn more, it is
+            advised to discuss this with your GP or practice nurse.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    
+  </body>
+</html>
