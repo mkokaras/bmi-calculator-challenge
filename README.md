@@ -1,6 +1,6 @@
 # Frontend Mentor - Body Mass Index Calculator solution
 
-This is a solution to the [Body Mass Index Calculator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Body Mass Index Calculator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T).
 
 ## Table of contents
 
@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Source Code: [Github](https://github.com/mkokaras/bmi-calculator-challenge)
+- URL: [Github Pages](https://mkokaras.github.io/bmi-calculator-challenge/)
 
 ## My process
 
