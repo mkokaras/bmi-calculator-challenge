@@ -1,0 +1,55 @@
+%heading {
+  font-weight: $fw-semi-bold;
+  line-height: 1.1;
+  color: $clr-grey-dark;
+}
+
+.heading-1 {
+  @extend %heading;
+
+  font-size: $fs-heading-xl;
+
+  letter-spacing: -2.4px;
+
+  @media (min-width: $bp-small-desktop) {
+    font-size: 6.4rem;
+    letter-spacing: -3.2px;
+  }
+}
+
+.heading-2 {
+  @extend %heading;
+
+  font-size: $fs-heading-lg;
+
+  letter-spacing: -1.6px;
+
+  @media (min-width: $bp-small-desktop) {
+    font-size: 4.8rem;
+    letter-spacing: -2.4px;
+  }
+}
+
+.heading-3 {
+  @extend %heading;
+
+  font-size: $fs-heading-md;
+
+  letter-spacing: -1.2px;
+
+  @media (min-width: $bp-small-desktop) {
+    font-size: 2.4rem;
+  }
+}
+
+.heading-4 {
+  @extend %heading;
+
+  font-size: $fs-heading-sm;
+
+  letter-spacing: -1px;
+
+  @media (min-width: $bp-small-desktop) {
+    font-size: 2rem;
+  }
+}

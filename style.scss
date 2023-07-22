@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@import "./sass/reset";
+@import "./sass/base";
+@import "./sass/typography";
+@import "./sass/hero";
+@import "./sass/info";
+@import "./sass/tips";
+@import "./sass/limitations";
