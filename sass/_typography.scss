@@ -30,7 +30,7 @@
   }
 }
 
-.heading-3 {
+.title {
   @extend %heading;
 
   font-size: $fs-heading-md;
@@ -42,7 +42,7 @@
   }
 }
 
-.heading-4 {
+.heading-3 {
   @extend %heading;
 
   font-size: $fs-heading-sm;
